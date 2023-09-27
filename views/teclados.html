@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teclados</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="imagens/logo.png">
+  <script src="JS/jquery.js"></script>
+  <script src="JS/index.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img id="logo" src="imagens/logo.png" alt="logo">NERI INFORMÁTICA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#sistema">Sistema</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contato">Contato</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Produtos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Componentes para PC &raquo;</a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="fontes.html">Fontes</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Gabinetes</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Memórias</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Placas de vídeo</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Placa mãe</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Processadores</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Refrigeração</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">SSD</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Conectividade e redes &raquo;</a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="#">Adaptadores</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Repetidores</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Roteadores</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Switchs</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Periféricos &raquo;</a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="#">Caixa de som</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Controles</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Fones de ouvido</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Mouses</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Mousepads</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="teclados.html">Teclados</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Portáteis e acessórioss &raquo;</a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="#">Bolsas e cases para notebook</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Carregadores USB</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Case para HD</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Pendrives</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Suportes &raquo;</a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="#">Suporte para CPU</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Suporte para monitor</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Suporte para notebook</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" id="busca">
+          <button class="btn btn-outline-light" type="button" id="botaob">Buscar</button>
+          <button class="btn btn-outline-light" type="button" id="limpar_teclado">Limpar</button>
+        </form>
+      </div>
+    </nav>
+
+    <main>
+      <div id="produtos">
+        <div class="container">
+          <div class="row" id="linha1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="ratio ratio-16x9">
+                  <img src="imagens/teclado1.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Teclado Gamer USB, TC201</h5>
+                  <p class="card-text">Teclas verdes, Multilaser</p>
+                  <h5 class="valor">R$70,00</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="ratio ratio-16x9">
+                  <img src="imagens/teclado2.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Teclado Gamer USB, TC160</h5>
+                  <p class="card-text">Teclas vermelhas, Multilaser</p>
+                  <h5 class="valor">R$70,00</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="ratio ratio-16x9">
+                  <img src="imagens/teclado3.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Teclado USB KB-15BK C3Tech</h5>
+                  <p class="card-text">Preto</p>
+                  <h5 class="valor">R$40,00</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="ratio ratio-16x9">
+                  <img src="imagens/teclado4.png" class="card-img-top" alt="">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Teclado K270920-004427</h5>
+                  <p class="card-text">Sem fio, Logitech - Preto, ABNT2 </p>
+                  <h5 class="valor">R$160,00</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row" id="linha2">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="ratio ratio-16x9">
+                    <img src="imagens/teclado5.jpg" class="card-img-top" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Teclado BLACKFIRE NEW</h5>
+                    <p class="card-text">Gamer - Fortrek, Preto</p>
+                    <h5 class="valor">R$190,00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="ratio ratio-16x9">
+                    <img src="imagens/teclado6.jpg" class="card-img-top" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Teclado Mini Slim TC154</h5>
+                    <p class="card-text">USB Multilaser, Preto</p>
+                    <h5 class="valor">R$90,00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="ratio ratio-16x9">
+                    <img src="imagens/teclado7.jpg" class="card-img-top" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Teclado K120 USB Logitech</h5>
+                    <p class="card-text">Preto</p>
+                    <h5 class="valor">R$65,00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="ratio ratio-16x9">
+                    <img src="imagens/teclado8.jpg" class="card-img-top" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Teclado Mecânico Redragon</h5>
+                    <p class="card-text">RGB switch Preto K552W-RGB</p>
+                    <h5 class="valor">R$250,00</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"></script>
+  </header>

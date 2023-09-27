@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Tektur&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Tektur', cursive;
+}
+
+.container {
+    padding: 2% 0 2.5%;
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+#logo {
+    max-width: 22%;
+    padding-right: 5%;
+}
+
+.nav-link {
+    color: rgb(148, 153, 157);
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.dropdown-menu li {
+    position: relative;
+}
+
+.dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+
+.dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+}
+
+.dropdown-menu>li:hover>.dropdown-submenu {
+    display: block;
+}
+
+/*SLIDER*/
+#carouselExampleIndicators .carousel-inner,
+#carouselExampleIndicators .carousel-item {
+    max-height: 70vh;
+}
+
+#carouselExampleIndicators .carousel-caption h2 {
+    font-weight: bold;
+}
+
+#carouselExampleIndicators .carousel-caption p {
+    font-size: 22px;
+}
+
+#carouselExampleIndicators .carousel-caption button {
+    background-color: black;
+    border-radius: 30px;
+    padding: 5px;
+    border: 2px solid white;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/*CARDS*/
+.card{
+    height: 100%;
+}
+
+.titulo_vendidos {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.card-img-top {
+    object-fit: contain;
+    padding: 2%;
+}
+
+.card-body {
+    text-align: center;
+}
+
+#linha1{
+    margin-top: 5%;
+}
+
+#linha2{
+    margin-bottom: -2.5%;
+}
+
+.valor {
+    color: rgb(28, 28, 130);
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+#vendidos{
+    margin-top: -0.5%;
+}
+
+/*SOBRE*/
+#sobre {
+    background-color: rgb(241, 241, 241);
+}
+
+.titulo_principal {
+    text-align: center;
+    margin-bottom: 2.5%;
+}
+
+.titulo {
+    color: rgb(28, 28, 130);
+    text-align: center;
+    margin-top: 2%;
+}
+
+.pcentro{
+    text-align: justify;
+}
+
+/*SISTEMA*/
+.pcentro_sistema{
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+#imagem_sistema{
+    margin-top: 6%;
+}
+
+/*CONTATO*/
+#contato {
+    background-color: rgb(49, 48, 48);
+    color: white;
+    text-align: center;
+}
+
+iframe {
+    height: 200px;
+    width: 800px;
+    margin-top: 1%;
+}
+
+i{
+    padding-bottom: 20px;
+}
+
+/*BUSCA*/
+#limpar_fonte{
+    margin-left: 2%;
+}
+
+#limpar_teclado{
+    margin-left: 2%;
+}
+
+#limpar_prod{
+    margin-left: 2%;
+}
+
+
+

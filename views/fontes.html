@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fontes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="icon" type="image/x-icon" href="imagens/logo.png">
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/index.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img id="logo" src="imagens/logo.png" alt="logo">NERI INFORMÁTICA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#sistema">Sistema</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contato">Contato</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Produtos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Componentes para PC &raquo;</a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="fontes.html">Fontes</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Gabinetes</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Memórias</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Placas de vídeo</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Placa mãe</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Processadores</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Refrigeração</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">SSD</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Conectividade e redes &raquo;</a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="#">Adaptadores</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Repetidores</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Roteadores</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Switchs</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Periféricos &raquo;</a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="#">Caixa de som</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Controles</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Fones de ouvido</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Mouses</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Mousepads</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="teclados.html">Teclados</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Portáteis e acessórioss &raquo;</a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="#">Bolsas e cases para notebook</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Carregadores USB</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Case para HD</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Pendrives</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Suportes &raquo;</a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="#">Suporte para CPU</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Suporte para monitor</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Suporte para notebook</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" id="busca">
+          <button class="btn btn-outline-light" type="button" id="botaob">Buscar</button>
+          <button class="btn btn-outline-light" type="button" id="limpar_fonte">Limpar</button>
+        </form>
+      </div>
+    </nav>
+
+    <main>
+      <div id="produtos">
+        <div class="container">
+          <div class="row" id="linha1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="ratio ratio-16x9">
+                  <img src="../imagens/fonte1.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Fonte ATX, PS-200V3</h5>
+                  <p class="card-text">Sem cabo, marca C3Tech, 200w</p>
+                  <h5 class="valor">R$70,00</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="ratio ratio-16x9">
+                  <img src="imagens/fonte2.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Fonte ATX, PS-200V4</h5>
+                  <p class="card-text">Sem cabo, marca C3Tech, 200w</p>
+                  <h5 class="valor">R$60,00</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="ratio ratio-16x9">
+                  <img src="imagens/fonte3.png" class="card-img-top" alt="">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Fonte Gamemax GM500</h5>
+                  <p class="card-text">Potência: 500W. 80 Plus Bronze
+                  </p>
+                  <h5 class="valor">R$400,00</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="ratio ratio-16x9">
+                  <img src="imagens/fonte4.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Fonte K-Mex - PX300CNG</h5>
+                  <p class="card-text">200W, Com Cabo</p>
+                  <h5 class="valor">R$200,00</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row" id="linha2">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="ratio ratio-16x9">
+                    <img src="imagens/fonte5.jpg" class="card-img-top" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Fonte K-mex PK-550ESG</h5>
+                    <p class="card-text">PCWELLS 500W</p>
+                    <h5 class="valor">R$70,00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="ratio ratio-16x9">
+                    <img src="imagens/fonte6.PNG" class="card-img-top" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Fonte Maxprint Rop 200w</h5>
+                    <p class="card-text">C/ Cabo - Prata</p>
+                    <h5 class="valor">R$90,00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="ratio ratio-16x9">
+                    <img src="imagens/fonte7.png" class="card-img-top" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Fonte Maxprint Rop ATXt</h5>
+                    <p class="card-text">230W</p>
+                    <h5 class="valor">R$150,00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="ratio ratio-16x9">
+                    <img src="imagens/fonte8.jpg" class="card-img-top" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Fonte MP600W3-I</h5>
+                    <p class="card-text">ONE POWER, 600W, Preto</p>
+                    <h5 class="valor">R$280,00</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"></script>
+  </header>
